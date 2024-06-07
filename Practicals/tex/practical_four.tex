@@ -71,15 +71,10 @@
 
 
 %====================================================================%
-\title{{\Huge\bf An Introduction to HPC and Scientific Computing -- How to Multi-task on CPUs Using OpenMP} \\ {\huge -- Practical Sessions --}}
+\title{{\Huge\bf An Introduction to HPC and Scientific Computing -- How to Multi-task on CPUs Using OpenMP\footnotetext{Thanks to Ian Bush for materials.}} \\ {\huge -- Practical Sessions --}}
 
 \date{}
 
-\author{\bf
-  \begin{tabular}{ll}
-    Ian Bush   & {\em ian.bush@oerc.ox.ac.uk}
-  \end{tabular}
-}
 %====================================================================%
 
 \begin{document}
@@ -104,14 +99,10 @@ questions you are asked to look at the performance of the code. To do this you r
 must do this with the batch system (we provide the batch scripts) as running on the front
 end will not give reliable timings due to the interaction with other users.
 
-The practicals will be performed on arcus-htc. Log on using the username and password that have been provided,
-and the files are under the directory {\cc lecture6}
+The practicals will be performed on {\cc htc-login}. Log on using the username and password that have been provided. Further materials are in lecture 6.
 
 Remember, to log in use: \\
-{\cc ssh -CX [username]@oscgate.arc.ox.ac.uk}
-
-{\cc ssh -CX arcus-htc}
-
+{\cc ssh -CX [username]@htc-login.arc.ox.ac.uk}
 
 %                                                                       %
 % ===================================================================== %
@@ -149,7 +140,7 @@ files are found in the directory {\cc hello}:
     that you are stating from a clean sheet. Now we need to load
     the module that makes the compiler available.
     Throughout these exercises we shall use gnu compiler. To load this issue 
-    {\cc module load gcc}. If you have time at the end
+    {\cc module load GCC/10.3.0}. If you have time at the end
     you might to try the practicals with the intel
     compiler. If so instead use {\cc module load intel-compilers}.
     You won't need to change any of your programs if you do this, but the
@@ -245,7 +236,7 @@ construct and the OpenMP reduction operation.
   \item It's good practice to make sure that you have a clean
     software environment at the start of each question. So
     again issue {\cc module purge} and
-    {\cc module load gcc}. Are you sure you
+    {\cc module load GCC/10.3.0}. Are you sure you
     understand what these commands are doing?
 
   \item Compile the serial code ({\cc make integral}) and run it with
@@ -388,7 +379,7 @@ time-line (again {\cc j} but for time steps {\cc t} and {\cc t-1}).
   
   \item Continue practicing the good habit of making sure you have exactly
     the software environment you need by again issuing {\cc module purge} and
-    {\cc module load gcc}. 
+    {\cc module load GCC/10.3.0}. 
 
   \item Edit the serial code {\cc heat.c} and try to understand what it
     is doing.

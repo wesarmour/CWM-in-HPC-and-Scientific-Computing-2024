@@ -71,16 +71,10 @@
 
 
 %====================================================================%
-\title{{\Huge\bf An Introduction to HPC and Scientific Computing -- Using Repositories and Good Coding Practice} \\ {\huge -- Practical Sessions --}}
+\title{{\Huge\bf An Introduction to HPC and Scientific Computing -- Using Repositories and Good Coding Practice\footnotetext{Thanks to Jacob Wilkins and Ian Bush for materials.}} \\ {\huge -- Practical Sessions --}}
 
 \date{}
 
-\author{\bf
-  \begin{tabular}{ll}
-    Jacob Wilkins & \emph{jacob.wilkins@oerc.ox.ac.uk} \\
-    Ian Bush   & {\em ian.bush@oerc.ox.ac.uk}
-  \end{tabular}
-}
 %====================================================================%
 
 \begin{document}
@@ -104,9 +98,9 @@ You may also be interested in: {\cc https://githowto.com/setup}
 
 
 Remember, to log in use: \\
-{\cc ssh -CX [username]@oscgate.arc.ox.ac.uk}
+{\cc ssh -CX [username]@htc-login.arc.ox.ac.uk}
 
-{\cc ssh -CX arcus-htc.ox.ac.uk}
+
 
 \section{Planning}
 Before you start anything, remember that planning is important. On a piece of paper, write a plan for the following problem called ``Langton's Ant'':
@@ -114,7 +108,7 @@ Before you start anything, remember that planning is important. On a piece of pa
 Squares on a plane are colored variously either black or white. We arbitrarily identify one square as the ``ant''. The ant can travel in any of the four cardinal directions at each step it takes. The ``ant'' moves according to the rules below:
 
 \begin{itemize}
-    \item{} At a white square, turn 90$^{\circ}$° right, flip the color of the square, move forward one unit
+    \item{} At a white square, turn 90$^{\circ}$ right, flip the color of the square, move forward one unit
     \item{} At a black square, turn 90$^{\circ}$ left, flip the color of the square, move forward one unit
 \end{itemize}
 
@@ -136,7 +130,7 @@ If you have any questions, take a reasonable quality picture of your plan and se
 %        ===========================
 \label{On Arcus-HTC}
 
-Now we shall see if we can use our new knowledge to create and manage a simple repository on arcus-b.
+Now we shall see if we can use our new knowledge to create and manage a simple repository on {\cc htc-login}.
 
 Log onto the cluster and
 
